@@ -1,0 +1,20 @@
+CREATE TABLE names (id INTEGER PRIMARY KEY, name TEXT,genre TEXT, quanity INTEGER, rating INTEGER);
+
+INSERT INTO names VALUES (1, "Teran", "Romance", 1, 5);
+INSERT INTO names VALUE (2, "Mike", "FICTION", 2, 8);
+INSERT INTO names VALUE (3, "Lip", "History", 3, 2);
+INSERT INTO names VALUE (4, "Hicks", "Fantasy", 4, 6);
+INSERT INTO names VALUE (5, "Jones", "History ", 5, 9);
+INSERT INTO names VALUE (6, " Felix", "Thriller",6,5);
+INSERT INTO names VALUE (7, "Washington", "Biography", 7, 4);
+INSERT INTO names VALUE (8, "Aldridge", "Suspense", 8, 6)
+INSERT INTO names VALUE (9, "Racquel", "Action", 9, 8);
+INSERT INTO names VALUE (10, "Tim", "Philosophy", 10, 3);
+INSERT INTO names VALUE (11, "Junior, "Essay", 11, 2);
+INSERT INTO names VALUE (12, "keisha", "Humor", 12, 6);
+INSERT INTO names VALUE (13, "James", "Poetry", 13, 5);
+INSERT INTO names VALUE (14, "Saint", "Novel", 14, 4);
+INSERT INTO names VALUE (15, "Mark", "Romance", 15,5);
+
+SELECT * FROM names
+ORDER BY quanity;
