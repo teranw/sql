@@ -1,0 +1,20 @@
+CREATE TABLE movies(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+Rank INTEGER,
+Title "TEXT",
+Studio "TEXT",
+Worldwide REAL,
+Domestic REAL,
+Overseas REAL,
+Year INTEGER);
+INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES(1,'The help','touchstone',213120004,169708112,43414417,2011);
+INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES (2,"Django Unchained", "sony",449449841566,162805434,287036132,2012);
+INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES(3,"Hidden Figres","Fox",230677636,169607287,61070349,2011);
+INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES  (4,"Selma","paramount",66670998,52076908,14594090,2015);
+INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES(5,"Fences","paramount",64282881,57682904,6599977,2016);
+INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES(6,"Mudbound","Netflix",53559,0,53559,2017);
+INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES(7,"The butler","Warner bros",177025498,116632095,60393403,2013);
+INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES(8,"loving","Focus",12898064,7710234,5187830,2016);
+INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES(9,"The Color Purple","Amblin",0,94029472,0,1985);
+INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES(10,"12 Years A slave","Plan B",180765061,56671993,124093068,2013);
+SELECT * FROM movies;
