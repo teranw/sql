@@ -1,0 +1,29 @@
+Create table people(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name text,
+age INTEGER);
+INSERT INTO people(id,name,age) VALUES(1,"Beyonce",41);
+INSERT INTO people(id,name,age) VALUES(2,"JAY-Z",53);
+INSERT INTO people(id,name,age) VALUES (3,"cardi b",30);
+INSERT INTO people(id,name,age) VALUES(4,"offset",31);
+INSERT INTO people(id,name,age) VALUES(5,"takeoff",28);
+INSERT INTO people(id,name,age) VALUES(6,"quavo",32);
+INSERT INTO people(id,name,age) VALUES (7,"nicki minaj",40);
+create table information(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+person_id integer,
+name text,
+genre text,
+married text,
+kids integer);
+INSERT INTO information(person_id,name,genre,married,kids) VALUES(1,"beyonce","singer","yes",3);
+INSERT INTO information(person_id,name,genre,married,kids) VALUES(2,"jay-z","rapper","yes",3);
+INSERT INTO information(person_id,name,genre,married,kids) VALUES(3,"cardi b","rapper","yes",2);
+INSERT INTO information(person_id,name,genre,married,kids) VALUES(4,"offset","rapper","yes",4);
+INSERT INTO information(person_id,name,genre,married,kids) VALUES(5,"quavo","rapper","no",0);
+INSERT INTO information(person_id,name,genre,married,kids) VALUES(6,"takeoff","rapper","no",0);
+INSERT INTO information(person_id,name,genre,married,kids) VALUES(7,"nicki minaj","rapper","yes",1);
+SELECT p.name, i.married
+FROM people p
+JOIN information i
+on p.id=i.person_id;
