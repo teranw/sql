@@ -20,4 +20,3 @@ INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUE
 INSERT INTO movies(Rank,"Title","Studio",Worldwide,Domestic,Overseas,Year) VALUES(11,"Just Mercy","warner Bros",50394773,56001502,14393271,2019);
 /* OR */
 SELECT * FROM Movies WHERE domestic > 60000000 OR overseas <10000;
-SELECT title FROM movies GROUP BY rank<3;
